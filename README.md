@@ -1,4 +1,4 @@
-# momo.coach.lua
+# momocoach.lua
 
 A neovim plugin to interact with [momo.coach](https://momo.coach)
 
@@ -8,19 +8,21 @@ for example with lazy.nvim
 
 ``` lua
 return {
-  "momocoach/momo.coach.lua"
+  "momocoach/momocoach.lua"
 }
 ```
 
 ### Authentification
 
-Run `:Momo auth your_client_id your_secret_key` to store your credentials.
+Run `:Momo auth signin your_client_id your_secret_key` to store your credentials.
+
+Run `:Momo auth signout` to remove your credentials.
 
 ### Stop watch
 
-Run `:Momo stopwatch start` to start the stop watch
-
 Run `:Momo stopwatch` to get the current stop watch value
+
+Run `:Momo stopwatch start` to start the stop watch
 
 Run `:Momo stopwatch pause` to pause the stop watch
 
