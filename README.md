@@ -4,6 +4,7 @@ A neovim plugin to interact with [momo.coach](https://momo.coach)
 
 ## Install
 
+for example with lazy.nvim
 
 ``` lua
 return {
