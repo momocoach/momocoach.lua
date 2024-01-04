@@ -14,7 +14,7 @@ return {
 
 ### Authentification
 
-Create a secret key and a client_id on [app.momo.coach/user/apikeys](https://app.momo.coach/user/akikeys)
+Create a secret key and a client_id on [app.momo.coach/user/apikeys](https://app.momo.coach/user/apikeys)
 
 Run `:Momo auth signin your_client_id your_secret_key` to store your credentials.
 
