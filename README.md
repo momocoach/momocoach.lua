@@ -16,7 +16,7 @@ return {
 
 Create a secret key and a client_id in the user section of [momo.coach](https://momo.coach)
 
-Run `:Momo auth signin your_client_id your_secret_key` to store your credentials.
+Run `:Momo auth signin your_secret_key your_client_id` to store your credentials.
 
 Run `:Momo auth signout` to remove your credentials.
 

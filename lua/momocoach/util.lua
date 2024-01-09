@@ -27,7 +27,7 @@ end
 function M.api(action, ci, sk)
   return 'curl -s https://api.momo.coach/' .. action ..
     ' -H "Accept: application/json" -H "Authorization: Bearer ' .. sk ..
-    '" -H "Clientid: ' .. ci .. '" -A "momo.coach_neovim_plugin@1.0.0"'
+    '" -H "Clientid: ' .. ci .. '" -A "momo.coach_neovim_plugin@1.1.0"'
 end
 
 function M.isValidTimeFormat(str)

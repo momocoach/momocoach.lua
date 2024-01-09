@@ -25,18 +25,16 @@ end
 
 function M.signin(params)
   if #params ~= 4 then
-    echo("2 arguments needed: clientid and secret")
-    vim.defer_fn(function() vim.cmd('echo ""') end, 5000)
+    echo("2 arguments needed: secret and clientid")
     return
   end
 
-  local userdata = { clientid= params[3], secret= params[4]}
+  local userdata = { clientid= params[4], secret= params[3]}
   local j = vim.json.encode(userdata)
   vim.fn.mkdir(find_config_path() .. "/momo.coach", 'p')
 
   vim.api.nvim_eval( "writefile(['" ..  j  .. "'], '" .. find_config_path() .. "/momo.coach/config.json')")
   echo("credentials saved")
-  vim.defer_fn(function() vim.cmd('echo ""') end, 5000)
 end
 
 function M.signout()
@@ -44,7 +42,6 @@ function M.signout()
     "delete('" .. find_config_path() .. "/momo.coach/config.json')"
   )
   echo("credentials removed")
-  vim.defer_fn(function() vim.cmd('echo ""') end, 5000)
 end
 
 M.get_cred = function()
